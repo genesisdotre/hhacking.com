@@ -2,86 +2,69 @@
 <html>
 <head>
   <title>hhacking.com</title>
+  <link rel="stylesheet" type="text/css" href="pricingtable.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 
-    html {
-      box-sizing: border-box;
-    }
-    *, *:before, *:after {
-      box-sizing: inherit;
-    }
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 
-    body, html {
-      padding: 0;
-      margin: 0;
-    }
+body, html {
+  padding: 0;
+  margin: 0;
+}
 
-    body {
-      margin: 0;
-      font-family: Arial;
-      font-size: 17px;
-    }
+body {
+  margin: 0;
+  font-family: Arial;
+  font-size: 17px;
+}
 
-    *, *:before, *:after {
-      box-sizing: inherit;
-    }
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 
-    .wrapper {
-      width:100%;
-      height:100vh;
-      overflow: hidden;
-    }
+.wrapper {
+  position: fixed;;
+  width:100%;
+  height:100vh;
+  overflow: hidden;
 
-    .wrapper video {
-      object-fit: cover;
-      width:100%;
-      height:100%;
-    }
+}
 
-    p {
-      font-family: sans-serif;
-      line-height:1.7;
-    }
+.wrapper video {
+  object-fit: cover;
+  width:100%;
+  height:100%;
+}
 
-  video::-webkit-media-controls {
-    display:none !important;
-  }
+p {
+  font-family: sans-serif;
+  line-height:1.7;
+}
+
+video::-webkit-media-controls {
+display:none !important;
+}
 
 .content {
-  position: fixed;
-  bottom: 0;
   background: rgba(0, 0, 0, 0.5);
   color: #f1f1f1;
   width: 100%;
   padding: 20px;
+  z-index: 10;
 }
 
-#myBtn {
-  width: 200px;
-  font-size: 18px;
-  padding: 10px;
-  border: none;
-  background: #000;
-  color: #fff;
-  cursor: pointer;
-}
-
-#myBtn:hover {
-  background: #ddd;
-  color: black;
+.content > * {
+  position: relative;
 }
 
 a {
   color: white;
-}
-
-.embed-container { 
-  position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; 
-}
-
-.embed-container iframe, .embed-container object, .embed-container embed { 
-  position: absolute; top: 0; left: 0; width: 100%; height: 100%; 
 }
 
 </style>
@@ -104,8 +87,9 @@ a {
 
 
   <div class="wrapper">
-    <!-- VIDEO from: https://www.youtube.com/watch?v=P47_GHwYAMw -->
-    <video src="flux.mp4" preload="auto" autoplay="true" loop="loop" muted="" volume="0"></video>
+    <video autoplay loop muted playsinline class="video-background ">
+      <source src="flux.mp4" type="video/mp4">
+    </video>
   </div>
 
 <div class="content">
@@ -113,30 +97,64 @@ a {
   <h1>hhacking.com</h1>
   <h1>hhacking.com</h1>
   <h1>hhacking.com</h1>
-  <h1>hhacking.com</h1>
-  <h1>hhacking.com</h1>
-  <h1>hhacking.com</h1>
-  <h1>hhacking.com</h1>
-  <h1>hhacking.com</h1>
-  <h1>hhacking.com</h1>
-  <h1>hhacking.com</h1>
-  <h1>hhacking.com</h1>
-  <h1>hhacking.com</h1>
-  <h1>hhacking.com</h1>
-  <h1>hhacking.com</h1>
-  <h1>hhacking.com</h1>
-  <h1>hhacking.com</h1>
   <p></p>
 
-
-  <div style="max-width: 560px">
-    <div class='embed-container'><iframe src='https://www.youtube.com/embed/vkCOZiqOhBM' frameborder='0' allowfullscreen></iframe></div>
+  <!-- CODE from https://codepen.io/Nidheesh/embed/LLeaYe?height=450&theme-id=0&slug-hash=LLeaYe&default-tab=result&user=Nidheesh&embed-version=2&preview=true#css-box -->
+  <div class="hover-table-layout">
+    <div class="listing-item">
+        <figure class="image">
+            <img src="https://i.ytimg.com/vi/MTrzTABzLfY/maxresdefault.jpg" alt="image">
+            <figcaption>
+              <div class="caption">
+                <h1>$10000</h1>
+                <p>lorem</p>
+                </div>
+            </figcaption>
+        </figure>
+        <div class="listing">
+            <h4>Show catalogue listing</h4>
+            <h4>Email signatures and banners</h4>
+            <h4>E-invitations</h4>
+            <h4>Online brochures</h4>
+        </div>
+    </div>
+    <div class="listing-item">
+        <figure class="image">
+            <img src="https://i.ytimg.com/vi/MTrzTABzLfY/maxresdefault.jpg" alt="image">
+            <figcaption>
+               <div class="caption">
+                <h1>$ 2000</h1>
+                <p>lorem</p>
+                </div>
+            </figcaption>
+        </figure>
+        <div class="listing">
+            <h4>Press releases</h4>
+            <h4>Company logos for online listings</h4>
+            <h4>Product categories</h4>
+            <h4>Using the ADIPEC logo on exhibitor advertising</h4>
+            <h4>Commercial opportunities in the preview and show dailies</h4>
+        </div>
+    </div>
+    <div class="listing-item">
+        <figure class="image">
+            <img src="https://i.ytimg.com/vi/MTrzTABzLfY/maxresdefault.jpg" alt="image">
+            <figcaption>
+               <div class="caption">
+                <h1>$100</h1>
+                <p>lorem</p>
+                </div>
+            </figcaption>
+        </figure>
+        <div class="listing">
+            <h4>Mobile app listing</h4>
+            <h4>Order visitor badges</h4>
+            <h4>Global meetings programme</h4>
+            <h4>Get Social</h4>
+        </div>
+    </div>
   </div>
 
-  <p>Ethereum address: <strong><code><a href="https://etherscan.io/address/0x0000000ed9aa4172a16c4f8178961ea6dcb6aac9">0x0000000ed9aa4172a16c4f8178961ea6dcb6aac9</a></code></strong></p>
-  <p>Bitcoin address: <strong><code><a href="https://www.blockchain.com/btc/address/1GEnesisReVCQG641yERVQgStUvqH6S9U2">1GEnesisReVCQG641yERVQgStUvqH6S9U2</a></code></strong></p>
-  <p>Experiment design: <strong><code><a href="https://londonreal.github.io/citizen-science/">londonreal.github.io/citizen-science</a></code></strong></p>
-  <!-- <button id="myBtn" onclick="myFunction()">Pause</button> -->
 </div>
 
 

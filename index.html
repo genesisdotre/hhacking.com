@@ -1,163 +1,217 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>hhacking.com</title>
-  <link rel="stylesheet" type="text/css" href="pricingtable.css">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
+  <head>
+    <title>hhacking.com</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-html {
-  box-sizing: border-box;
-}
-*, *:before, *:after {
-  box-sizing: inherit;
-}
+    <link rel="stylesheet" href="pricingtable.css">
+    <meta charset="utf-8" />
+    <style>
 
-body, html {
-  padding: 0;
-  margin: 0;
-}
+      body {
+        margin: 0;
+        color: white;
+        font-family: monospace;
+        font-size: 1.1em;
+      }
 
-body {
-  margin: 0;
-  font-family: Arial;
-  font-size: 17px;
-}
+      .wrapper {
+        width: 800px;
+        max-width: 80vw;
+        margin: 80px auto; /* TODO: align middle */
+        padding: 20px;
+        background: rgba(0,0,0,0.7);
+        box-shadow: 0px 0px 30px 10px #ffffff;
+        z-index: 10;
+        position: relative;;
+      }
 
-*, *:before, *:after {
-  box-sizing: inherit;
-}
+      .space {
+        display: inline-block;
+        width: 5px;
+      }
 
-.wrapper {
-  position: fixed;;
-  width:100%;
-  height:100vh;
-  overflow: hidden;
+      a {
+        color: white;
+        text-decoration: none;
+        transition: all 1000ms ease-out;
+        border-bottom: 2px solid white;
+      }
 
-}
+      header a:hover {
+        color: yellow;
+        border-bottom: 2px solid yellow;
+      }
 
-.wrapper video {
-  object-fit: cover;
-  width:100%;
-  height:100%;
-}
+      .clearfix:after {
+         content: " ";
+         visibility: hidden;
+         display: block;
+         height: 0;
+         clear: both;
+      }
 
-p {
-  font-family: sans-serif;
-  line-height:1.7;
-}
+      h3 {
+        margin-bottom: 0;
+        font-weight: bold;
+        font-size: 1.4em;
+      }
 
-video::-webkit-media-controls {
-display:none !important;
-}
+      h3 span {
+        font-size: 0.7em;
+      }
 
-.content {
-  background: rgba(0, 0, 0, 0.5);
-  color: #f1f1f1;
-  width: 100%;
-  padding: 20px;
-  z-index: 10;
-}
+    .video-wrapper {
+      position: fixed;;
+      width:100%;
+      height:100vh;
+      overflow: hidden;
+      top: 0;
+    }
 
-.content > * {
-  position: relative;
-}
+    .video-wrapper video {
+      object-fit: cover;
+      width:100%;
+      height:100%;
+    }
 
-a {
-  color: white;
-}
+    .option {
+      border: 2px solid white;
+      padding: 10px;
+      background-color: rgba(0,0,0,0.7);
+      width: 220px;
+      float: left;
+    }
 
-</style>
+    .header {
+      font-size: 16px;
+    }
 
-<meta property="og:title" content="London Real Citizen Science"/>
-<meta property="og:image" content="https://genesis.re/citizenscience/london-real-david-icke.jpg""/>
-<meta property="og:site_name" content="genesis.re"/>
-<meta property="og:description" content="Not into conspiracy theories, let's see what science says?"/>
+    </style>
 
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="@genesisdotre">
-<meta name="twitter:creator" content="@marsXrobertson">
-<meta name="twitter:title" content="London Real Citizen Science">
-<meta name="twitter:description" content="Not into conspiracy theories, let's see what science says?">
-<meta name="twitter:image" content="https://genesis.re/citizenscience/london-real-david-icke.jpg">
+    <meta property="og:title" content="genesis.re • operating system for the planets"/>
+    <meta property="og:image" content="https://genesis.re/flower.jpg"/>
+    <meta property="og:site_name" content="architecting the new world"/>
+    <meta property="og:description" content="working towards 'Plan B' as paradigm shift is required"/>
 
-</head>
-<body>
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@genesisdotre">
+    <meta name="twitter:creator" content="@marsXrobertson">
+    <meta name="twitter:title" content="genesis.re • operating system for the planets">
+    <meta name="twitter:description" content="architecting the new world • working towards 'Plan B' as paradigm shift is required">
+    <meta name="twitter:image" content="https://genesis.re/flower.jpg">
 
+  </head>
+  <body>
 
-
-  <div class="wrapper">
-    <video autoplay loop muted playsinline class="video-background ">
+  <div class="video-wrapper">
+    <video autoplay muted loop id="myVideo">
       <source src="flux.mp4" type="video/mp4">
     </video>
   </div>
 
-<div class="content">
-  <h1>hhacking.com</h1>
-  <h1>hhacking.com</h1>
-  <h1>hhacking.com</h1>
-  <h1>hhacking.com</h1>
-  <p></p>
+    <div class="wrapper">
 
-  <!-- CODE from https://codepen.io/Nidheesh/embed/LLeaYe?height=450&theme-id=0&slug-hash=LLeaYe&default-tab=result&user=Nidheesh&embed-version=2&preview=true#css-box -->
-  <div class="hover-table-layout">
-    <div class="listing-item">
-        <figure class="image">
-            <img src="https://i.ytimg.com/vi/MTrzTABzLfY/maxresdefault.jpg" alt="image">
-            <figcaption>
-              <div class="caption">
-                <h1>$10000</h1>
-                <p>lorem</p>
-                </div>
-            </figcaption>
-        </figure>
-        <div class="listing">
-            <h4>Show catalogue listing</h4>
-            <h4>Email signatures and banners</h4>
-            <h4>E-invitations</h4>
-            <h4>Online brochures</h4>
-        </div>
+      <h3>hhacking.com <span>&nbsp; &nbsp; meets &nbsp; &nbsp;</span> <a href="https://basexisland.com">basexisland.com</a></h3>
+
+      <p>hhacking means hacking squared, hacking<sup>2</sup>, holistic human health hacking (hhhh), also financial hacking, spirtual hacking, consciousness hacking, exponential hacking, meta-post-quantum-singularity hacking.<br>
+
+      <p>Whilst <a href="https://basexisland.com">basexisland.com</a> is still researching optimal financial, legal, jurisdiction, compliance, regulation <strong>open-source and antifragile</strong> structure, it makes sense to establish a separate entity that will start accepting money and building client base</p>
+
+      <div class="option">
+        <div class="header">Test payment</div>
+         <p>You'll receive an email with our collection of favourite emojis!</p>
+         <ul>
+          <li>tryinig things out</li>
+          <li>testing in prod</li>
+          <li>hacking metric "number of paying customers"</li>
+         </ul>
+        <button id="payment-test">$0.01</button>
+      </div>      
+
+      <div class="option">
+        <div class="header">Island package</div>
+         <p>Splendor and glory as the founding member. 1 week on the island, the very special, the very best offer ever.</p>
+         <ul>
+          <li>totally transferable</li>
+          <li>use it for yourself or gift to the loved ones</li>
+          <li>issued as ERC721 NFT token on Ethereum</li>
+         </ul>
+        <button id="payment-perpetual">$1000.00</button>
+      </div>
+
+
+
+<div id="paypal-button-container"></div>
+
+<script src="https://www.paypal.com/sdk/js?client-id=AQbPHleUYH2fTDRWF0oJWuEUPo2cB9-ju8ZVdW-I9bse19ac9ine4hiclGDBkOiYnbi9vJ5Rwm0AF1Tu&currency=USD" data-sdk-integration-source="button-factory"></script>
+<script>
+  paypal.Buttons({
+      style: {
+          shape: 'rect',
+          color: 'blue',
+          layout: 'vertical',
+          label: 'buynow',
+          
+      },
+      createOrder: function(data, actions) {
+          return actions.order.create({
+              purchase_units: [{
+                  amount: {
+                      value: value // will it be dynamic?
+                  }
+              }]
+          });
+      },
+      onApprove: function(data, actions) {
+          return actions.order.capture().then(function(details) {
+              alert('Transaction completed by ' + details.payer.name.given_name + '!');
+          });
+      }
+  }).render('#paypal-button-container');
+</script>
+
+
+
+
+      <style> .emoji {
+        margin-top: 20px;
+        font-size: 2em;
+        top: 8px;
+        position: relative;
+      }
+    </style>
+
+
+<span class="emoji">🔮</span> <a href="https://www.abundance.community/members/3362617">Abundance Digital with Peter Diamandis</a><br><br>
+<span class="emoji">🧑‍🚀</span> <a href="https://marsrobertson.com">Mars Robertson</a><br><br>
+<span class="emoji">🌀</span> <a href="https://genesis.re">genesis.re</a><br><br>
+
     </div>
-    <div class="listing-item">
-        <figure class="image">
-            <img src="https://i.ytimg.com/vi/MTrzTABzLfY/maxresdefault.jpg" alt="image">
-            <figcaption>
-               <div class="caption">
-                <h1>$ 2000</h1>
-                <p>lorem</p>
-                </div>
-            </figcaption>
-        </figure>
-        <div class="listing">
-            <h4>Press releases</h4>
-            <h4>Company logos for online listings</h4>
-            <h4>Product categories</h4>
-            <h4>Using the ADIPEC logo on exhibitor advertising</h4>
-            <h4>Commercial opportunities in the preview and show dailies</h4>
-        </div>
-    </div>
-    <div class="listing-item">
-        <figure class="image">
-            <img src="https://i.ytimg.com/vi/MTrzTABzLfY/maxresdefault.jpg" alt="image">
-            <figcaption>
-               <div class="caption">
-                <h1>$100</h1>
-                <p>lorem</p>
-                </div>
-            </figcaption>
-        </figure>
-        <div class="listing">
-            <h4>Mobile app listing</h4>
-            <h4>Order visitor badges</h4>
-            <h4>Global meetings programme</h4>
-            <h4>Get Social</h4>
-        </div>
-    </div>
-  </div>
 
-</div>
+    <script src="https://genesis.re/cmdctrl/cmdctrl.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(function() {
 
+        value = 0.01;
+        toggle = false;
 
+        $("#toggle").on("click", function() {
+          if (toggle) {
+            value = 1000;
+            console.log("value = 1000");
+          } else {
+            value = 0.01;
+            console.log("value = 0.01");          
+          }
+          toggle = !toggle;
+        })
 
-</body>
+      });
+    </script>
+
+    <!-- <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script> -->
+
+  </body>
 </html>

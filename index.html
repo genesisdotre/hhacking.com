@@ -76,15 +76,25 @@
     }
 
     .option {
-      border: 2px solid white;
+      background: rgba(0,0,0,0.7);
+      box-shadow: 0px 0px 6px 6px #ffffff;
       padding: 10px;
-      background-color: rgba(0,0,0,0.7);
       width: 220px;
       float: left;
+      position: relative;
     }
 
     .header {
       font-size: 16px;
+    }
+
+    .button-wrapper {
+      position: absolute;
+      bottom: 0;
+      margin-left: auto;
+      margin-right: auto;
+      left: 0;
+      right: 0;
     }
 
     .button {
@@ -96,6 +106,7 @@
       text-decoration: none;
       display: inline-block;
       font-size: 16px;
+      padding-bottom: 65px;
     }
 
     .row {
@@ -109,8 +120,8 @@
     #paypal-button-container {
       width: 380px;
       margin: 0 auto;
-      background: rgba(0,0,0,0.7);
       padding: 20px;
+      background: rgba(0,0,0,0.2);
       box-shadow: 0px 0px 30px 10px #ffffff;
     }
 
@@ -156,12 +167,12 @@
             <li>testing in prod</li>
             <li>hacking metric "number of paying customers"</li>
            </ul>
-          <p style="text-align: center;">
+          <p class="button-wrapper" style="text-align: center;">
             <a href="" class="button" id="payment-test">$0.01</a>
           </p>
         </div>      
 
-        <div class="option" style="margin-left: 14px;">
+        <div class="option" style="margin-left: 27px;">
           <div class="header">Island package</div>
            <p>Splendor and glory as the founding member. 1 week on the island, the very special, the very best offer ever.</p>
            <ul>
@@ -169,7 +180,7 @@
             <li>use it for yourself or gift to the loved ones</li>
             <li>issued as ERC721 NFT token on Ethereum</li>
            </ul>
-          <p style="text-align: center;">
+          <p class="button-wrapper" style="text-align: center;">
             <a href="" class="button" id="payment-perpetual">$1000.00</a>
           </p>
         </div>
@@ -180,6 +191,9 @@
 <br>
 
 <div id="paypal-button-container"></div>
+
+<br>
+<br>
 
 <script src="https://www.paypal.com/sdk/js?client-id=AQbPHleUYH2fTDRWF0oJWuEUPo2cB9-ju8ZVdW-I9bse19ac9ine4hiclGDBkOiYnbi9vJ5Rwm0AF1Tu&currency=USD" data-sdk-integration-source="button-factory"></script>
 <script>
@@ -221,7 +235,7 @@
 
 
 <span class="emoji">🔮</span> <a href="https://www.abundance.community/members/3362617">Abundance Digital with Peter Diamandis</a><br><br>
-<span class="emoji">🧑‍🚀</span> <a href="https://marsrobertson.com">Mars Robertson</a> <span class="emoji">🌀</span> <a href="https://genesis.re">genesis.re</a><br><br>
+<span class="emoji">🧑‍🚀</span> <a href="https://marsrobertson.com">Mars Robertson</a><br><br>
 
     </div>
 

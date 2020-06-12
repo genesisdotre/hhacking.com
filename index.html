@@ -4,7 +4,19 @@
     <title>hhacking.com</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="pricingtable.css">
+    <meta property="og:title" content="hhacking.com"/>
+    <meta property="og:image" content="https://hhacking.com/background.jpg"/>
+    <meta property="og:site_name" content="architecting the new world"/>
+    <meta property="og:description" content="utilising BaseX island facilities"/>
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@basexisland">
+    <meta name="twitter:creator" content="@marsXrobertson">
+    <meta name="twitter:title" content="hhacking.com">
+    <meta name="twitter:description" content="utilising BaseX island facilities">
+    <meta name="twitter:image" content="https://hhacking.com/background.jpg">
+
+
     <meta charset="utf-8" />
     <style>
 
@@ -90,16 +102,22 @@
       width: 220px;
       float: left;
       position: relative;
-      padding-bottom: 65px;
+      padding-bottom: 20px;
+      transition: background-color 0.2s ease;
     }
 
     .option:hover {
-      background: rgba(83, 18, 95, 0.6);
+      background: rgba(83, 18, 95, 0.4);
     }
 
     .option.selected {
       background: rgba(83, 18, 95, 0.8);
     }
+
+    .option.selected:hover {
+      background: rgba(83, 18, 95, 0.9);
+    }
+    
 
     .header {
       font-size: 16px;
@@ -140,6 +158,11 @@
       padding: 20px;
       background: rgba(0,0,0,0.7);
       box-shadow: 0px 0px 6px 6px #ffffff;
+      transition: background-color 0.2s ease;
+    }    
+
+    #paypal-button-container:hover {
+      background: rgba(83, 18, 95, 0.4);
     }
 
 
@@ -175,40 +198,43 @@
 
       <h3>hhacking.com <span>&nbsp; &nbsp; meets &nbsp; &nbsp;</span> <a href="https://basexisland.com">basexisland.com</a></h3>
 
-      <p>hhacking means hacking squared, hacking<sup>2</sup>, biohacking, holistic human health hacking (hhhh), financial hacking, spirtual hacking, consciousness hacking, exponential hacking, reality hacking, post-meta-quantum-singularity hacking.</p>
+      <p>hacking<sup>2</sup>, hacking in multiple dimensions, biohacking, holistic hacking, financial hacking, spirtual hacking, consciousness hacking, exponential hacking, reality hacking, post-meta-quantum-singularity hacking...</p>
 
-      <h3>The bottom line: money opens many doors</h3>
+      <h3>launching BaseX cashflow first</h3>
 
-      <p>Whilst <a href="https://basexisland.com">basexisland.com</a> is still researching optimal financial, legal, jurisdiction, compliance, regulation <strong>open-source and antifragile</strong> structure, it makes sense to establish a separate entity that will start accepting money and building client base</p>
+      <p>it would be super cool to sell some tickets and provide cashflow for the island</p>
+
+
+      <!-- <p>Whilst <a href="https://basexisland.com">basexisland.com</a> is still researching optimal financial, legal, jurisdiction, compliance, regulation <strong>open-source and antifragile</strong> structure, it makes sense to establish a separate entity that will start accepting money and building client base</p> -->
 
       <br>
 
       <div class="row">
 
-        <div class="option">
-          <div class="header">Test payment</div>
+        <div class="option" id="payment-test">
+          <div class="header">Test payment $0.01</div>
            <p>You'll receive an email with our collection of favourite emojis!</p>
            <ul>
             <li>trying things out</li>
             <li>testing in prod</li>
             <li>hacking metric "number of paying customers"</li>
            </ul>
-          <p class="button-wrapper" style="text-align: center;">
+<!--           <p class="button-wrapper" style="text-align: center;">
             <a href="" class="button" id="payment-test">$0.01</a>
-          </p>
+          </p> -->
         </div>      
 
-        <div class="option selected" style="margin-left: 27px;">
-          <div class="header">Island package</div>
+        <div class="option selected" style="margin-left: 27px;" id="payment-perpetual">
+          <div class="header">Island package $1000.00</div>
            <p>Splendor and glory as the founding member. 1 week on the island, the very special, the very best offer ever.</p>
            <ul>
             <li>totally transferable</li>
             <li>use it for yourself or gift to the loved ones</li>
             <li>issued as ERC721 NFT token on Ethereum</li>
            </ul>
-          <p class="button-wrapper" style="text-align: center;">
+<!--           <p class="button-wrapper" style="text-align: center;">
             <a href="" class="button" id="payment-perpetual">$1000.00</a>
-          </p>
+          </p> -->
         </div>
 
       </div>
@@ -250,7 +276,13 @@
 
 
 
-      <style> .emoji {
+      <style> 
+      .option {
+        cursor: pointer;
+      }
+
+
+      .emoji {
         margin-top: 20px;
         font-size: 2em;
         top: 8px;
@@ -259,8 +291,9 @@
     </style>
 
 
-<span class="emoji">🔮</span> <a href="https://www.abundance.community/members/3362617">Abundance Digital with Peter Diamandis</a><br><br>
+<!-- <span class="emoji">🔮</span> <a href="https://www.abundance.community/members/3362617">Abundance Digital with Peter Diamandis</a><br><br> -->
 <span class="emoji">🧑‍🚀</span> <a href="https://marsrobertson.com">Mars Robertson</a><br><br>
+<span class="emoji">🇪🇪</span> <a href="https://basexisland.com">BaseX island</a><br><br>
 
     </div>
 
